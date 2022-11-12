@@ -203,7 +203,7 @@ module Ray
 end
 
 def ray(*args)
-  settings = {host: "http://localhost", port: 23517}
+  settings = {host: "http://host.docker.internal", port: 23517}
 
   Ray::Ray.new(settings).send(*args)
 end
